@@ -132,6 +132,7 @@ class FingerprintOrder implements \ArrayAccess, \IteratorAggregate, \Countable
      * @param int|string $mOffset
      * @param int|string $mValue
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($mOffset, $mValue)
     {
         if (!$mOffset) {
